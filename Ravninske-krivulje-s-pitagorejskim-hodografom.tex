@@ -1,19 +1,55 @@
-Hodograf parametično podane odvedljive krivulje r = (x(t), y(t))^T je krivulja, 
-podana s predpisom r' = (x', y')^T, pravzaprav gre za odvod podane krivulje. 
+\documentclass[12pt]{article}
+ \usepackage[utf8]{inputenc}
+   \usepackage[slovene]{babel}
+\usepackage{amsthm,amsfonts,amsmath,amssymb,url}
+\usepackage{hyperref}
+
+\textheight 210 true mm
+\textwidth 146 true mm
+\voffset=-17mm
+\hoffset=-13mm
+
+\newtheorem{Izrek}{{\sc Izrek}}[section]
+\newtheorem{Trditev}[Izrek]{{\sc Trditev}}
+\newtheorem{Lema}[Izrek]{{\sc Lema}}
+\newtheorem{Posledica}[Izrek]{{\sc Posledica}}
+\newtheorem{Definicija}[Izrek]{{\sc Definicija}}
+\newtheorem{Domneva}[Izrek]{{\sc Domneva}}
+\newtheorem{Zgled}[Izrek]{{\sc Zgled}}
+\newtheorem{Opomba}[Izrek]{{\sc Opomba}}
+
+\def\theIzrek{{\rm \arabic{section}.\arabic{Izrek}}}
+
+\newenvironment{izrek}{\begin{Izrek}\sl}{\end{Izrek}}
+\newenvironment{trditev}{\begin{Trditev}\sl}{\end{Trditev}}
+\newenvironment{lema}{\begin{Lema}\sl}{\end{Lema}}
+\newenvironment{posledica}{\begin{Posledica}\sl}{\end{Posledica}}
+\newenvironment{definicija}{\begin{Definicija}\rm }{\end{Definicija}}
+\newenvironment{domneva}{\begin{Domneva}\rm }{\end{Domneva}}
+\newenvironment{zgled}{\begin{Zgled}\rm}{\end{Zgled}}
+\newenvironment{opomba}{\begin{Opomba}\rm}{\end{Opomba}}
+
+\newenvironment{dokaz}[1][{\sc Dokaz}]{\begin{proof}[#1]\renewcommand*{\qedsymbol}{\(\square\)}}{\end{proof}}
+
+\newcommand{\Mod}[1]{\hbox{ (mod } #1)}
+
+\begin{document}
+Hodograf parametično podane odvedljive krivulje $r = (x(t), y(t))^T$ je krivulja, 
+podana s predpisom $r' = (x', y')^T$, pravzaprav gre za odvod podane krivulje. 
 Krivulje s pitagorejskim hodografom so polinomske parametrične krivulje, 
 ki zadoščajo naslednjemu pogoju:
-x'^2 + y'^2 = ro^2 za nek polinom ro^2.
+$x'^2 + y'^2 = ro^2$ za nek polinom $ro^2$.
 Krajše jih imenjujemo tudi PH krivulje. 
 Zaradi lepih lastnosti jih pogosto uporabljamo v...
 
 Za izpeljavo lastnosti v nadaljevanju, bomo potrebovali naslednji izrek:
 Izrek (Kubota)
 Polinomi a, b in c zadostijo pitagorejskemu pogoju
-a^2(t) + b^2(t) = c^2(t),
-natanko tedaj, ko jih lahko izrazimo z drugimi polinomi u(t), v(t) in w(t) v obliki
-a(t) = (u^2(t) - v^2(t))w(t),
-b(t) = 2uvw,
-c(t) = (u^2 + v^2)w,
+$$a^2(t) + b^2(t) = c^2(t),$$
+natanko tedaj, ko jih lahko izrazimo z drugimi polinomi $u(t), v(t) in w(t)$ v obliki
+$$a(t) = (u^2(t) - v^2(t))w(t),$$
+$$b(t) = 2uvw,$$
+$$c(t) = (u^2 + v^2)w,$$
 kjer u in v nimata paroma skupnih ničel
 Dokaz: ...
 
@@ -31,39 +67,39 @@ potem je PH krivulja dobljena z integracijo hodografa stopnje k = n + 2m + 1
 
 V nadaljevanju se bomo osredotočili na hodografe kjer je w(t) = 1 in je GCD(u,v) konstanta.
 Imenjujemo jih primitivni Pitagorejski hodografi. 
-Takšni hodografi definirajo regularne PH krivulje, ki zadostujejo pogoju r'(t) \noteq 0 za vsak t. 
+Takšni hodografi definirajo regularne PH krivulje, ki zadostujejo pogoju $r'(t) \neq 0$ za vsak t. 
 Iz opombe (stevilka) sledi, da je stopnja PH krivulje, definirane z integracijo
 primitivnih hodografov, lihe stopnje (k = 2m + 1).
 
 Karakterizacijo PH krivulj želimo izraziti v Bezierjevi obliki.
 
 Oglejmo si primer primitivne PH krivulje 3. stopnje v Bezierjevi obliki:
-u(t) = u_0*B^1_1(t), v(t) = v_0*B^1_0(t) + v_1*B^1_1(t)
-Ker sta u in v tuja, sledi, da mora biti u_0*v_1 \noteq u_1*v_0. Ker velja tudi,
-da u in v nista oba konstanti, pa mora veljati (u_0 - u_1)^2 + (v_0 - v_1)^2 \noteq 0.
+$$u(t) = u_0*B^1_1(t), v(t) = v_0*B^1_0(t) + v_1*B^1_1(t)$$
+Ker sta u in v tuja, sledi, da mora biti $u_0*v_1 \neq u_1*v_0$. Ker velja tudi,
+da u in v nista oba konstanti, pa mora veljati $(u_0 - u_1)^2 + (v_0 - v_1)^2 \neq 0$.
 
-x'(t) = (u_0^2 - v_0^2)*B_0^2(t) + (u_0*u_1 - v_0*v_1)*B_1^2(t) + (u_1^2 - v_1^2)*B_2^2(t),
-y'(t) = 2*u_0*v_0*B_0^2(t) + (u_0*v_1 + u_1*v_0)*B_1^2(t) + 2*u_1*v_1*B_2^2(t).
+$$x'(t) = (u_0^2 - v_0^2)*B_0^2(t) + (u_0*u_1 - v_0*v_1)*B_1^2(t) + (u_1^2 - v_1^2)*B_2^2(t),$$
+$$y'(t) = 2*u_0*v_0*B_0^2(t) + (u_0*v_1 + u_1*v_0)*B_1^2(t) + 2*u_1*v_1*B_2^2(t).$$
 
 Z integracijo dobimo kubično Bezierjevo krivuljo podano s predpisom:
-p(t) = p_0*B_0^3(t) + p_1*B_1^3(t) + p_2*B_2^3(t) + p_3*B_3^3(t)
+$$p(t) = p_0*B_0^3(t) + p_1*B_1^3(t) + p_2*B_2^3(t) + p_3*B_3^3(t)$$
 
 kjer je
-p_1 = p_0 + \frac{1}{3}*(u_0^2 - v_0^2, 2*u_0*v_0)^T,
-p_2 = p_1 + \frac{1}{3}*(u_0*u_1 - v_0*v_1, u_0*u_1 + v_0*v_1)^T,
-p_3 = p_2 + \frac{1}{3}*(u_1^2 - v_1^2, 2*u_1*v_1)^T,
+$$p_1 = p_0 + \frac{1}{3}*(u_0^2 - v_0^2, 2*u_0*v_0)^T,$$
+$$p_2 = p_1 + \frac{1}{3}*(u_0*u_1 - v_0*v_1, u_0*u_1 + v_0*v_1)^T,$$
+$$p_3 = p_2 + \frac{1}{3}*(u_1^2 - v_1^2, 2*u_1*v_1)^T,$$
 
-Pri tem je p_0 prosto izbrana kontrolna točka (zaradi konstante pri integraciji).
+Pri tem je $p_0$ prosto izbrana kontrolna točka (zaradi konstante pri integraciji).
 
-parametrična hitrost regularne PH krivulje r(t) = (x(t), y(t)) je podana s predpisom:
+parametrična hitrost regularne PH krivulje $r(t) = (x(t), y(t))$ je podana s predpisom:
 $$ | r\prime (t) | =\sqrt{x\prime^2(t)+y\prime^2(t)}= u^2 (t) + v^2 (t) = \sigma (t),$$
 in je polinom v $t$. 
 Iz lastnosti, da je krivulja, ki jo dobimo z integrinjanjem stopnje (k = 2m + 1) sledi
 da morata biti u in v stopnje  $m = \frac{1}{2}(n - 1)$. Zapišemu ju lahko v 
 Bernstainovi bazi:
 
-	u (t) &=&\sum_{k=0}^m u_kB_k^m(t), SO TUKI RES VELIKI B-JI???
-	v (t)&=&\sum_{k=0}^m v_kB_k^m(t).
+	$u (t)=\sum_{k=0}^m u_kB_k^m(t)$, SO TUKI RES VELIKI B-JI???
+	$v (t) =\sum_{k=0}^m v_kB_k^m(t).$
 
 Potem je 
 $$\sigma (t) =\sum_{k=0}^{n-1} \sigma_kB_k^{n-1}(t),$$, 
@@ -72,9 +108,9 @@ $$\sigma_k =\sum_{j=max(0,k-m)}^{min(m,k)}\frac{\binom{m}{j}\binom{m}{k-j}}{\bin
 
 Če pogledamo primer od zgoraj(kubično B. krivuljo) dobimo naslednje koeficiente za sigmo :
 
-\sigma_0 &=& u^2_0+ v^2_0, 
-\sigma_1 &=& u_0u_1 + v_0v_1, 
-\sigma_2 &=& u^2_1+ v^2_1.
+$\sigma_0 = u^2_0+ v^2_0, $
+$\sigma_1 = u_0u_1 + v_0v_1,$ 
+$\sigma_2 = u^2_1+ v^2_1.$
 
 Poglejmo si sedaj še dolžino loka s.
 To dobimo kot:
@@ -91,8 +127,8 @@ Običajno smo za  b. krivulje prikazali z vrednotenjem vrednosti parametrov  $t_
 (enakomerni razmik med parametri )... 
 ampak smo s tem dobili neenakomerno porazdeljene točke na krivulji, saj parametrična 
 hitrost, v splošnem, ni konstantna.
-Če želimo doseči, da bodo točke s(t_k) vseeno enakomerno porazdeljene na grafu,
-lahko to dosežemo tako, da za vsak t_k izračunamo nov paramater, ki ga dobimo 
+Če želimo doseči, da bodo točke $s(t_k)$ vseeno enakomerno porazdeljene na grafu,
+lahko to dosežemo tako, da za vsak $t_k$ izračunamo nov paramater, ki ga dobimo 
 s pomočjo Newton-Raphsonove iteracije: 
 $$t^{(0)}_k = t_{k-1}+\frac{\Delta s}{\sigma(t_{k-1})}$$
 $$t^{(r)}_k = t^{(r-1)}_k-\frac{s(t^{(r-1)}_k)-k\Delta s}{\sigma(t^{(r-1)}_k)}, r = 1, 2,\ldots.$$
@@ -111,10 +147,10 @@ Racionalni odmiki PH krivulj
 Odmik krivulje r(t) je v splošnem definiran kot
 $$ r_d(t) = r(t) + dn(t)$$
 V primeru, da r(t) pri tem predstavlja Bezierjevo PH krivuljo velja, 
-da r_d(t) spada med racionalne Bezierjeve krivulje. V primeru kubične PH krivilje 
+da $r_d(t)$ spada med racionalne Bezierjeve krivulje. V primeru kubične PH krivilje 
 je njen odmik 5. stopnje. Normala n je pri tem enaka, kot smo jo definirali zgoraj:
 $$\textbf{n} =\frac{(2uv, v^2 - u^2)}{\sigma}$$,
-kjer je \sigma parametrična hitrost krivulje r.
+kjer je $\sigma$ parametrična hitrost krivulje r.
 
 Definirajmo kontrolne točke krivulje r v homogenih koordinatah kot
 $$ P_k = (W_k, X_k, Y_k) = (1, x_k, y_k), k = 0, ..., n.$$
@@ -138,3 +174,4 @@ $$ O_4 = \frac{1}{5} [3\sigma_2 P_2 + 2\sigma_1 P_3 + 3 d (2\Delta P_1^{\perp} +
 $$ O_5 = \sigma_2 P_3 + 3 d \Delta P_2^{\perp}$$
 
 
+\end{document}
