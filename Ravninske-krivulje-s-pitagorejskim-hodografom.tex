@@ -82,12 +82,12 @@ $$x'(t) = (u_0^2 - v_0^2)*B_0^2(t) + (u_0*u_1 - v_0*v_1)*B_1^2(t) + (u_1^2 - v_1
 $$y'(t) = 2*u_0*v_0*B_0^2(t) + (u_0*v_1 + u_1*v_0)*B_1^2(t) + 2*u_1*v_1*B_2^2(t).$$
 
 Z integracijo dobimo kubično Bezierjevo krivuljo podano s predpisom:
-$$p(t) = p_0*B_0^3(t) + p_1*B_1^3(t) + p_2*B_2^3(t) + p_3*B_3^3(t)$$
+$$p(t) = b_0*B_0^3(t) + b_1*B_1^3(t) + b_2*B_2^3(t) + b_3*B_3^3(t)$$
 
 kjer je
-$$p_1 = p_0 + \frac{1}{3}*(u_0^2 - v_0^2, 2*u_0*v_0)^T,$$
-$$p_2 = p_1 + \frac{1}{3}*(u_0*u_1 - v_0*v_1, u_0*u_1 + v_0*v_1)^T,$$
-$$p_3 = p_2 + \frac{1}{3}*(u_1^2 - v_1^2, 2*u_1*v_1)^T,$$
+$$b_1 = b_0 + \frac{1}{3}*(u_0^2 - v_0^2, 2*u_0*v_0)^T,$$
+$$b_2 = b_1 + \frac{1}{3}*(u_0*u_1 - v_0*v_1, u_0*u_1 + v_0*v_1)^T,$$
+$$b_3 = b_2 + \frac{1}{3}*(u_1^2 - v_1^2, 2*u_1*v_1)^T,$$
 
 Pri tem je $p_0$ prosto izbrana kontrolna točka (zaradi konstante pri integraciji).
 
@@ -98,7 +98,7 @@ Iz lastnosti, da je krivulja, ki jo dobimo z integrinjanjem stopnje (k = 2m + 1)
 da morata biti u in v stopnje  $m = \frac{1}{2}(n - 1)$. Zapišemu ju lahko v 
 Bernstainovi bazi:
 
-	$u (t)=\sum_{k=0}^m u_kB_k^m(t)$, SO TUKI RES VELIKI B-JI???
+	$u (t)=\sum_{k=0}^m u_kB_k^m(t)$, 
 	$v (t) =\sum_{k=0}^m v_kB_k^m(t).$
 
 Potem je 
@@ -142,7 +142,6 @@ definirani so v smislu polinomov u(t) in v(t), in sicer:
 $$\textbf{t} =\frac{(u^2 - v^2, 2uv)}{\sigma},\hspace{10pt} \textbf{n} =\frac{(2uv, v^2 - u^2)}{\sigma},\hspace{10pt} \kappa = 2 \frac{uv\prime - u\prime v}{\sigma^2}.$$
 
 
-DAMIJAN YOUR TURN ;-)
 Racionalni odmiki PH krivulj
 Odmik krivulje r(t) je v splošnem definiran kot
 $$ r_d(t) = r(t) + dn(t)$$
