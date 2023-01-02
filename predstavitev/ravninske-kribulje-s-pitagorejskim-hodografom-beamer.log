@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.17)  30 DEC 2022 11:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.17)  2 JAN 2023 12:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -770,28 +770,6 @@ Overfull \hbox (2.67313pt too wide) detected at line 92
 
 ] [5
 
-] [6
-
-] [7
-
-] [8
-
-] [9
-
-] [10
-
-] [11
-
-]
-Overfull \vbox (35.55191pt too high) detected at line 193
- []
-
-[12
-
-] [13
-
-] [14
-
 ]
 \tf@nav=\write5
 \openout5 = `ravninske-kribulje-s-pitagorejskim-hodografom-beamer.nav'.
@@ -809,18 +787,18 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 195.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 195.
  ) 
 Here is how much of TeX's memory you used:
- 18504 strings out of 492616
- 346234 string characters out of 6129480
- 434657 words of memory out of 5000000
- 21963 multiletter control sequences out of 15000+600000
- 50018 words of font info for 45 fonts, out of 8000000 for 9000
+ 18451 strings out of 492616
+ 345449 string characters out of 6129480
+ 433657 words of memory out of 5000000
+ 21928 multiletter control sequences out of 15000+600000
+ 47234 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,14n,55p,923b,568s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsso12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsso8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on /Users/damijanrandl/Desktop/ISRM/letnik_1/RPGO/seminarska-naloga/RPGO/predstavitev/ravninske-kribulje-s-pitagorejskim-hodografom-beamer.pdf (14 pages, 176848 bytes).
+ 56i,14n,55p,923b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsso12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsso8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on /Users/damijanrandl/Desktop/ISRM/letnik_1/RPGO/seminarska-naloga/RPGO/predstavitev/ravninske-kribulje-s-pitagorejskim-hodografom-beamer.pdf (5 pages, 143351 bytes).
 PDF statistics:
- 441 PDF objects out of 1000 (max. 8388607)
- 401 compressed objects within 5 object streams
- 29 named destinations out of 1000 (max. 500000)
+ 199 PDF objects out of 1000 (max. 8388607)
+ 173 compressed objects within 2 object streams
+ 11 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
