@@ -1,0 +1,46 @@
+\documentclass[12pt]{beamer}
+\usepackage[slovene]{babel}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb,amsmath}
+
+\title{Ravninske krivulje s pitagorejskim hodogramom}
+\author{Tit Arnšek, Damijan Randl}
+\date{Januar 2023}
+\institute[Inst.]{Fakulteta za matematiko in fiziko \\ Predmet: Geometrijsko podprto računalniško oblikovanje}
+\date{Januar 2023}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}
+\begin{enumerate}
+\item Ravninske krivulje s pitagorejskim hodografom
+\item B\'ezierjeve kontrolne točke krivulj s PH
+\item Parametrična hitrost in dolžina loka
+\item Odvod krivulje
+\item Racionalni odmiki krivulj s PH
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Kubične PH krivulje}
+    \begin{eqnarray}
+        x\prime (t) &=& (u^2_0- v^2_0)B^2_0(t) +\nonumber\\
+        & & (u_0u_1-v_0v_1)B^2_1(t)+(u^2_1-v^2_1)B^2_2(t),\nonumber\\
+        y\prime(t) &=& 2u_0v_0B^2_0(t)+(u_0v_1+u_1v_0)B^2_1(t)+2u_1v_1B^2_2(t).\nonumber
+    \end{eqnarray}
+    \begin{block}{}
+        \begin{eqnarray}
+            \textbf{p}_1 &=& \textbf{p}_0 + \frac{1}{3}(u_0^2-v_0^2,2u_0v_0),\nonumber\\
+            \textbf{p}_2 &=& \textbf{p}_1 + \frac{1}{3}(u_0u_1-v_0v_1,u_0v_1+u_1v_0),\nonumber\\
+            \textbf{p}_3 &=& \textbf{p}_2 + \frac{1}{3}(u_1^2-v_1^2,2u_1v_1),\nonumber
+        \end{eqnarray}
+    \end{block}
+\end{frame}
+
+\end{document}
