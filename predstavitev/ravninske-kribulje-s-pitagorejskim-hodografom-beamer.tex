@@ -82,23 +82,23 @@
     \begin{itemize}
         \item Primitivni PH: $w=1$, $GCD(u, v) = konstanta$ % morda tudi max(deg(u), deg(v)) = 1
         \item Zapišimo $u$ in $v$ v Bernsteinovi bazi:
-              $$ u(t) = u_0 B_0^1(t) + u_1 B_1^1(t) $$
-              $$ v(t) = v_0 B_0^1(t) + v_1 B_1^1(t) $$
+              $$ \textbf{u}(t) = u_0 B_0^1(t) + u_1 B_1^1(t) $$
+              $$ \textbf{v}(t) = v_0 B_0^1(t) + v_1 B_1^1(t) $$
               Pri tem predpostavimo, da velja $u_0 : u_1 \neq v_0 : v_1$.
         \item Po zgornjem izreku tako dobimo hodograf
-              $$x'(t) = (u_0^2 - v_0^2)B_0^2(t) + (u_0 u_1 - v_0 v_1) B_1^2(t) + (u_1^2 - v_1^2) B_2^2(t),$$
-              $$y'(t) = 2 u_0 v_0 B_0^2(t) + (u_0 v_1 + u_1 v_0) B_1^2(t) + 2 u_1 v_1 B_2^2(t).$$
+              $$\textbf{x}'(t) = (u_0^2 - v_0^2)B_0^2(t) + (u_0 u_1 - v_0 v_1) B_1^2(t) + (u_1^2 - v_1^2) B_2^2(t),$$
+              $$\textbf{y}'(t) = 2 u_0 v_0 B_0^2(t) + (u_0 v_1 + u_1 v_0) B_1^2(t) + 2 u_1 v_1 B_2^2(t).$$
     \end{itemize}
 \end{frame}
 \begin{frame}
     \begin{itemize}
         \item Kubično PH krivljo tako zapišemo 
-              $$ r(t) = (x(t), y(t))^T = \sum_{i=0}^{n}{b_k B_k^n(t)} $$
+              $$ \textbf{r}(t) = (\textbf{x}(t), \textbf{y}(t))^T = \sum_{i=0}^{n}{\textbf{b}_k B_k^n(t)} $$
               kjer sta $x$ in $y$ izražena kot
-              $$x(t) = \int_0^t (u^2(t) - v^2(t)) dt,$$
-              $$y(t) = \int_0^t (2u(t)v(t))dt$$
+              $$\textbf{x}(t) = \int_0^t (\textbf{u}^2(t) - \textbf{v}^2(t)) dt,$$
+              $$\textbf{y}(t) = \int_0^t (2\textbf{u}(t)\textbf{v}(t))dt$$
         \item Pravilo za integriranje Bernstainovih baznih polinomov:
-              $$\int B^n_k(t) dt = \frac{1}{n+1} \sum_{j=k+1}^{n+1} b^{n+1}_k(t)$$
+              $$\int B^n_k(t) dt = \frac{1}{n+1} \sum_{j=k+1}^{n+1} B^{n+1}_k(t)$$
     \end{itemize}
 \end{frame}
 
@@ -196,37 +196,40 @@
     \frametitle{Racionalni odmik PH krivulje}
         \begin{itemize}
             \item Odmik krivulje $r(t)$ na  $d$ je definiran kot 
-                  $$r_d(t) = r(t) + d n(t)$$
-            \item Zapišimo $u$ in $v$ v Bernsteinovi bazi:
-                  $$ u(t) = u_0 B_0^1(t) + u_1 B_1^1(t) $$
-                  $$ v(t) = v_0 B_0^1(t) + v_1 B_1^1(t) $$
-                  Pri tem predpostavimo, da velja $u_0 : u_1 \neq v_0 : v_1$.
-            \item Po zgornjem izreku tako dobimo hodograf
-                  $$x'(t) = (u_0^2 - v_0^2)B_0^2(t) + (u_0 u_1 - v_0 v_1) B_1^2(t) + (u_1^2 - v_1^2) B_2^2(t),$$
-                  $$y'(t) = 2 u_0 v_0 B_0^2(t) + (u_0 v_1 + u_1 v_0) B_1^2(t) + 2 u_1 v_1 B_2^2(t).$$
+                  $$\textbf{r}_d(t) = \textbf{r}(t) + d \textbf{n}(t)$$
+            \item Racionalna B\'ezierjeva krivulja
+            \item Racionalni odmik kubične PH krivulje je 5. stopnje
+            \item Homogeni zapis koordinat kontrolnih točk PH krivulje \textbf{r}(t):
+                  $$ \textbf{P}_k = (W_k, X_k, Y_k) = (1, x_k, y_k), k = 0, ..., n$$
         \end{itemize}
     \end{frame}
     \begin{frame}
         \begin{itemize}
-            \item Kubično PH krivljo tako zapišemo 
-                  $$ r(t) = (x(t), y(t))^T = \sum_{i=0}^{n}{b_k B_k^n(t)} $$
-                  kjer sta $x$ in $y$ izražena kot
-                  $$x(t) = \int_0^t (u^2(t) - v^2(t)) dt,$$
-                  $$y(t) = \int_0^t (2u(t)v(t))dt$$
-            \item Pravilo za integriranje Bernstainovih baznih polinomov:
-                  $$\int B^n_k(t) dt = \frac{1}{n+1} \sum_{j=k+1}^{n+1} b^{n+1}_k(t)$$
+            \item Racionalni odmik PH krivulje lahko predstavimo kot:
+                  $$ \textbf{r}_d(t) = \left(\frac{X(t)}{W(t)}, \frac{Y(t)}{W(t)}\right)$$ 
+            \item Pri tem so
+                  $$\textbf{O}_k = (W_k, X_k, Y_k), k = 0, ..., 2n-1$$
+                  kontrolne točke racionalnega odmika.
+            \item Zapišemo jih lahko tudi drugače:
+                  $$\textbf{O}_k = \sum_{j=\max(0, k-n)}^{\min(n-1, k)} \frac{\binom{n-1}{j} \binom{n}{k-j}}{\binom{2n-1}{k}}(\sigma_j \textbf{P}_{k-j}+ d n \Delta\textbf{P}^\perp_j),$$ 
+                  $$k=0, ..., 2n-1$$
         \end{itemize}
     \end{frame}
     
     \begin{frame}
         \begin{itemize}
-            \item Integracija nam tako poda kontrolne točke kubične B\'ezierjeve krivulje
-                    \begin{eqnarray}
-                        \textbf{b}_1 &=& \textbf{b}_0 + \frac{1}{3}(u_0^2 - v_0^2, 2 u_0 v_0)^T,\nonumber\\
-                        \textbf{b}_2 &=& \textbf{b}_1 + \frac{1}{3}(u_0 u_1 - v_0 v_1, u_0 u_1 + v_0 v_1)^T,\nonumber\\
-                        \textbf{b}_3 &=& \textbf{b}_2 + \frac{1}{3} (u_1^2 - v_1^2, 2 u_1 v_1)^T,\nonumber
-                    \end{eqnarray}
-                  Pri čemer je $\textbf{b}_0$ poljubna kontrolna točke, ki ustreza konstantam pri integraciji.
+            \item Tako dobimo kontrolne točke racionalnega odmika kubične PH krivulje:
+                \begin{eqnarray}
+                    \textbf{O}_0 &=& \sigma_0 \textbf{P}_0 + 3 d \Delta \textbf{P}_0^{\perp},\nonumber \\
+                    \textbf{O}_1 &=& \frac{1}{5} [2 \sigma_1 \textbf{P}_0 + 3\sigma_0 \textbf{P}_1 + 3 d (3 \Delta \textbf{P}_0^{\perp} + 2 \Delta \textbf{P}_1^{\perp})],\nonumber \\
+                    \textbf{O}_2 &=& \frac{1}{10} [\sigma_2 \textbf{P}_0 + 6\sigma_1 \textbf{P}_1 + 3\sigma_0 \textbf{P}_2 + \nonumber \\
+                        & & 3 d (3 \Delta \textbf{P}_0^{\perp} + 6 \Delta \textbf{P}_1^{\perp}) + \Delta \textbf{P}_2^{\perp})],\nonumber \\
+                    \textbf{O}_3 &=& \frac{1}{10} [3\sigma_2 \textbf{P}_1 + 6\sigma_1 \textbf{P}_2 + \sigma_0 \textbf{P}_3 + \nonumber \\
+                        & & 3 d (\Delta \textbf{P}_0^{\perp} + 6 \Delta \textbf{P}_1^{\perp} + 3 \Delta \textbf{P}_2^{\perp})],\nonumber \\
+                    \textbf{O}_4 &=& \frac{1}{5} [3\sigma_2 \textbf{P}_2 + 2\sigma_1 \textbf{P}_3 + 3 d (2\Delta \textbf{P}_1^{\perp} + 3 \Delta \textbf{P}_2^{\perp})],\nonumber \\
+                    \textbf{O}_5 &=& \sigma_2 \textbf{P}_3 + 3 d \Delta \textbf{P}_2^{\perp}\nonumber
+                \end{eqnarray}
+                
         \end{itemize}
     \end{frame}
 
