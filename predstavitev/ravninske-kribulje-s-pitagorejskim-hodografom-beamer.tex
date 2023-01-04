@@ -48,15 +48,66 @@
 \end{enumerate}
 \end{frame}
 
-% \begin{frame}
-% \frametitle{Ravninske krivulje s pitagorejskim hodografom}
+\begin{frame}
+\frametitle{Ravninske krivulje s pitagorejskim hodografom}
+\begin{itemize}
+    \item PH krivuluje
+    \item Rida T. Farouki in Vangelis Sakkalis, 1990
+    \item Uporaba v računalniško podprtem oblikovanju, proizvodnji (CNC razrez), robotiki, načrtovanju poti, animacijah... 
+    \item Enostaven in natančen izračun dolžine; paralelne krivulje imajo racionalno parametrizacijo.
+\end{itemize}
+\end{frame}
 
-% \begin{block}{Definicija}
-% Hodograf parametrične krivulje $r (t)$ v $\mathbb{R}^n$ je odvod krivulje same $r\prime (t)$ podan kot parametrična krivulja. Polinomska krivulja $r (t)$ v $\mathbb{R}^n$ je krivulja s Pitagorejskim hodografom (PH), če vsota kvadratov vseh $n$ polinomov na koordinatnih komponentah hodografa krivulje sovpada s kvadratom nekega polinoma $\sigma(t)$.
-% \end{block}
+\begin{frame}
+    
 
-% Torej za $r\prime (t) = (x\prime (t), y\prime (t))$ velja: $$x\prime^2(t) + y\prime^2(t)= \sigma^2 (t)$$ za nek polinom $\sigma(t)$.
-% \end{frame}
+    \begin{block}{Definicija}
+        \begin{itemize}
+            \item Hodograf parametrične krivulje $r (t) \in \mathbb{R}^2$ je odvod krivulje same $r\prime (t)$ podan kot parametrična krivulja.
+            \item  Polinomska krivulja $r (t)$ v $\mathbb{R}^n$ je krivulja s Pitagorejskim hodografom (PH), če velja naslednji pogoj:
+            $$x'(t)^2 + y'(t)^2 = \sigma(t)^2 \text{ za nek polinom } \sigma$$.
+        \end{itemize}
+        
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    
+
+    \begin{block}{Izrek(Kubota)}
+        Polinomi $a$, $b$ in $c$ zadostijo pitagorejskemu pogoju
+        $$a^2(t) + b^2(t) = c^2(t),$$
+        natanko tedaj, ko jih lahko izrazimo s polinomi $u(t), v(t)$ in $w(t)$ v obliki
+        $$a(t) = (u^2(t) - v^2(t))w(t),$$
+        $$b(t) = 2u(t)v(t)w(t),$$
+        $$c(t) = (u^2(t) + v^2(t))w(t),$$
+        ter $u$ in $v$ nimata skupnih ničel.
+        
+    \end{block}
+
+\end{frame}
+
+\begin{frame}
+    \begin{itemize}
+        \item $x'(t) = (u^2(t) - v^2(t))w(t),$
+        \item $y'(t) = 2u(t)v(t)w(t),$
+        \item $\sigma(t) = (u^2(t) + v^2(t))w(t),$
+    \end{itemize}
+    \begin{block}{Opombe:}
+        Če:
+        \begin{itemize}
+            \item  $w=0$ ali $u=v=0$, potem $r(t)$ predstavlja točko.
+            \item $u$, $v$ in $w$ konstante in $w \neq 0$, vsaj eden od $u, v$ neničelna konstanta,
+            potem $r(t)$ enakomerno parametrizirana daljica.
+            \item $u$ in $v$ konstanti, $w$  ni konstanta, potem $r(t)$ neenakomerno parametrizirana daljica ali premica.
+            \item $w = 0$ in $u = \pm v$ ali vsaj eden od $u, v$ ničelni polinom, 
+            potem $r(t)$ neenakomerno parametrizirana daljica.
+        \end{itemize}
+
+        $r(t)$ stopnje $n + 2m + 1$, kjer $n = deg(w)$ in $m = max(deg(u),deg(v))$  
+        
+    \end{block}
+\end{frame}
 
 % \begin{frame}
 % $ a^2 (t) + b^2 (t) = c^2 (t)$ natanko tedaj, ko obstajajo polinomi $u (t), v (t), w (t)$, tako da
@@ -127,14 +178,29 @@
 % 	\end{block}	
 % \end{frame}
 
-% \begin{frame}
-% \frametitle{Parametrična hitrost in dolžina loka}
-% $$\sigma (t) = | r\prime (t) | =\sqrt{x\prime^2(t)+y\prime^2(t)}= u^2 (t) + v^2 (t)$$
-% $$\sigma (t) =\sum_{k=0}^{n-1} \sigma_kB_k^{n-1}(t),$$
-% 	kjer so 
-% $$\sigma_k =\sum_{j=max(0,k-m)}^{min(m,k)}\frac{\binom{m}{j}\binom{m}{k-j}}{\binom{n-1}{k}}(u_ju_{k-j}+v_jv_{k-j}),$$ $$k = 0,\ldots , n - 1.$$
-% \end{frame}
+\begin{frame}
+\frametitle{Parametrična hitrost in dolžina loka}
+Parametrična hitrost:
+$$ | r\prime (t) | =\sqrt{x\prime^2(t)+y\prime^2(t)}= u^2 (t) + v^2 (t) = \sigma (t)$$
+$$\sigma (t) =\sum_{k=0}^{n-1} \sigma_kB_k^{n-1}(t),$$
+	kjer  
+$$\sigma_k =\sum_{j=max(0,k-m)}^{min(m,k)}\frac{\binom{m}{j}\binom{m}{k-j}}{\binom{n-1}{k}}(u_ju_{k-j}+v_jv_{k-j}),$$ $$k = 0,\ldots , n - 1.$$
+\end{frame}
+\begin{frame}
+    Dolžina loka:
+    $$s (t) =\int^t_0\sigma(\tau) d\tau,$$.
+    $$s (t) =\sum^n_{k=0}s_k\binom{n}{k}(1-t)^{n-k}t^k=\sum_{k=0}^n s_kB^n_k(t),$$
+	kjer  $s_0=0$ in $s_k=\frac{1}{n}\sum^{k-1}_{j=0}\sigma_j, k=1,\ldots,n.$.
 
+    Skupna dolžina loka je S(1). 
+    \newline
+    
+    Enotska tangenta in normala:
+\begin{itemize}
+    \item $\textbf{t} =\frac{(u^2 - v^2, 2uv)}{\sigma}$
+    \item $\textbf{n} =\frac{(2uv, v^2 - u^2)}{\sigma}$
+\end{itemize}
+\end{frame}
 % \begin{frame}
 % \begin{block}{}
 % 	\begin{eqnarray}
