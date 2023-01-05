@@ -149,7 +149,7 @@
               $$\textbf{x}(t) = \int_0^t (\textbf{u}^2(t) - \textbf{v}^2(t)) dt,$$
               $$\textbf{y}(t) = \int_0^t (2\textbf{u}(t)\textbf{v}(t))dt$$
         \item Pravilo za integriranje Bernstainovih baznih polinomov:
-              $$\int B^n_k(t) dt = \frac{1}{n+1} \sum_{j=k+1}^{n+1} B^{n+1}_k(t)$$
+              $$\int B^n_i(t) dt = \frac{1}{n+1} \sum_{j=i+1}^{n+1} B^{n+1}_j(t)$$
     \end{itemize}
 \end{frame}
 
@@ -289,7 +289,7 @@ $$\sigma_k =\sum_{j=max(0,k-m)}^{min(m,k)}\frac{\binom{m}{j}\binom{m}{k-j}}{\bin
                     \textbf{O}_0 &=& \sigma_0 \textbf{P}_0 + 3 d \Delta \textbf{P}_0^{\perp},\nonumber \\
                     \textbf{O}_1 &=& \frac{1}{5} [2 \sigma_1 \textbf{P}_0 + 3\sigma_0 \textbf{P}_1 + 3 d (3 \Delta \textbf{P}_0^{\perp} + 2 \Delta \textbf{P}_1^{\perp})],\nonumber \\
                     \textbf{O}_2 &=& \frac{1}{10} [\sigma_2 \textbf{P}_0 + 6\sigma_1 \textbf{P}_1 + 3\sigma_0 \textbf{P}_2 + \nonumber \\
-                        & & 3 d (3 \Delta \textbf{P}_0^{\perp} + 6 \Delta \textbf{P}_1^{\perp}) + \Delta \textbf{P}_2^{\perp})],\nonumber \\
+                        & & 3 d (3 \Delta \textbf{P}_0^{\perp} + 6 \Delta \textbf{P}_1^{\perp} + \Delta \textbf{P}_2^{\perp})],\nonumber \\
                     \textbf{O}_3 &=& \frac{1}{10} [3\sigma_2 \textbf{P}_1 + 6\sigma_1 \textbf{P}_2 + \sigma_0 \textbf{P}_3 + \nonumber \\
                         & & 3 d (\Delta \textbf{P}_0^{\perp} + 6 \Delta \textbf{P}_1^{\perp} + 3 \Delta \textbf{P}_2^{\perp})],\nonumber \\
                     \textbf{O}_4 &=& \frac{1}{5} [3\sigma_2 \textbf{P}_2 + 2\sigma_1 \textbf{P}_3 + 3 d (2\Delta \textbf{P}_1^{\perp} + 3 \Delta \textbf{P}_2^{\perp})],\nonumber \\
