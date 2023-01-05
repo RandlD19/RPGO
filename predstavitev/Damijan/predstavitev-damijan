@@ -1,5 +1,41 @@
+\documentclass[12pt]{article}
+ \usepackage[utf8]{inputenc}
+   \usepackage[slovene]{babel}
+\usepackage{amsthm,amsfonts,amsmath,amssymb,url}
+\usepackage{hyperref}
+
+\textheight 210 true mm
+\textwidth 146 true mm
+\voffset=-17mm
+\hoffset=-13mm
+
+\newtheorem{Izrek}{{\sc Izrek}}[section]
+\newtheorem{Trditev}[Izrek]{{\sc Trditev}}
+\newtheorem{Lema}[Izrek]{{\sc Lema}}
+\newtheorem{Posledica}[Izrek]{{\sc Posledica}}
+\newtheorem{Definicija}[Izrek]{{\sc Definicija}}
+\newtheorem{Domneva}[Izrek]{{\sc Domneva}}
+\newtheorem{Zgled}[Izrek]{{\sc Zgled}}
+\newtheorem{Opomba}[Izrek]{{\sc Opomba}}
+
+\def\theIzrek{{\rm \arabic{section}.\arabic{Izrek}}}
+
+\newenvironment{izrek}{\begin{Izrek}\sl}{\end{Izrek}}
+\newenvironment{trditev}{\begin{Trditev}\sl}{\end{Trditev}}
+\newenvironment{lema}{\begin{Lema}\sl}{\end{Lema}}
+\newenvironment{posledica}{\begin{Posledica}\sl}{\end{Posledica}}
+\newenvironment{definicija}{\begin{Definicija}\rm }{\end{Definicija}}
+\newenvironment{domneva}{\begin{Domneva}\rm }{\end{Domneva}}
+\newenvironment{zgled}{\begin{Zgled}\rm}{\end{Zgled}}
+\newenvironment{opomba}{\begin{Opomba}\rm}{\end{Opomba}}
+
+\newenvironment{dokaz}[1][{\sc Dokaz}]{\begin{proof}[#1]\renewcommand*{\qedsymbol}{\(\square\)}}{\end{proof}}
+
+\newcommand{\Mod}[1]{\hbox{ (mod } #1)}
+
 \begin{document}
 \section*{Kubične PH krivulje}
+...
 V nadaljevanju se bomo posvetili le PH krivuljam kjer je $w(t)=1$, polinoma $u$ in $v$ pa nimata skupnih ničel - sta si tuja.
 Hodografu s temi lastnostmi pravimo primitiven pitagorejski hodograf in definira t.i. regularno PH krivuljo (saj velja $r'(t) \neq 0 \forall t$).
 
@@ -39,7 +75,7 @@ $$\textbf{O}_k = \sum_{j=\max(0, k-n)}^{\min(n-1, k)} \frac{\binom{n-1}{j} \bino
 $$k=0, ..., 2n-1$$
 Pri tem so $P_k = (W_k, X_k, Y_k),    k = 0, ..., 2n-1$ kontrolne točke podane krivulje $r$ v homogenih koordinatah. 
 Razlike $\Delta P_k$ pa so definirane kot $\Delta P_k = P_{k+1} - P_k = (0, \Delta x_k, \Delta y_k)$
-Označimo pa še $\Delta P_k^{\perp} = (0, -\Delta y_k, \Delta x_k)
+Označimo pa še $\Delta P_k^{\perp} = (0, -\Delta y_k, \Delta x_k)$
 
 
 
