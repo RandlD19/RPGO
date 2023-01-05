@@ -6,6 +6,23 @@
 \usepackage[T1]{fontenc}
 \usepackage{amsfonts,marvosym, amsthm}
 \usepackage{amssymb,amsmath}
+
+
+\usetheme{Boadilla}
+\usecolortheme{whale}
+\usefonttheme{professionalfonts}
+\usepackage{etoolbox}
+\setbeamertemplate{theorems}[numbered] 
+\AtBeginEnvironment{theorem}{%
+    \setbeamercolor{block title}{fg=white,bg=orange}
+    \setbeamercolor{block body}{fg=black,bg=yellow}
+}
+\AtBeginEnvironment{proof}{%
+    \setbeamercolor{block title}{fg=green,bg=red}
+    \setbeamercolor{block body}{fg=black,bg=purple}
+}
+
+\setbeamercolor{normal text}{fg=black} 
 % \usetheme{Frankfurt}
 \usecolortheme{whale}
 \theoremstyle{definition} % tekst napisan pokoncno
@@ -60,21 +77,17 @@
 
 \begin{frame}
     
-
-    \begin{block}{Definicija}
+    \begin{definicija}
         \begin{itemize}
             \item Hodograf parametrične krivulje $r (t) \in \mathbb{R}^2$ je odvod krivulje same $r\prime (t)$ podan kot parametrična krivulja.
             \item  Polinomska krivulja $r (t)$ v $\mathbb{R}^n$ je krivulja s Pitagorejskim hodografom (PH), če velja naslednji pogoj:
             $$x'(t)^2 + y'(t)^2 = \sigma(t)^2 \text{ za nek polinom } \sigma$$.
-        \end{itemize}
-        
-    \end{block}
+        \end{itemize} 
+    \end{definicija}
 \end{frame}
 
 \begin{frame}
-    
-
-    \begin{block}{Izrek(Kubota)}
+    \begin{izrek}[Kubota]
         Polinomi $a$, $b$ in $c$ zadostijo pitagorejskemu pogoju
         $$a^2(t) + b^2(t) = c^2(t),$$
         natanko tedaj, ko jih lahko izrazimo s polinomi $u(t), v(t)$ in $w(t)$ v obliki
@@ -83,18 +96,17 @@
         $$c(t) = (u^2(t) + v^2(t))w(t),$$
         ter $u$ in $v$ nimata skupnih ničel.
         
-    \end{block}
+    \end{izrek}
 
 \end{frame}
 
 \begin{frame}
-    \begin{itemize}
-        \item $x'(t) = (u^2(t) - v^2(t))w(t),$
-        \item $y'(t) = 2u(t)v(t)w(t),$
-        \item $\sigma(t) = (u^2(t) + v^2(t))w(t),$
-    \end{itemize}
-    \begin{block}{Opombe:}
-        Če:
+    % \begin{itemize}
+    %     \item $x'(t) = (u^2(t) - v^2(t))w(t),$
+    %     \item $y'(t) = 2u(t)v(t)w(t),$
+    %     \item $\sigma(t) = (u^2(t) + v^2(t))w(t),$
+    % \end{itemize}
+    \begin{opomba}
         \begin{itemize}
             \item  $w=0$ ali $u=v=0$, potem $r(t)$ predstavlja točko.
             \item $u$, $v$ in $w$ konstante in $w \neq 0$, vsaj eden od $u, v$ neničelna konstanta,
@@ -102,11 +114,10 @@
             \item $u$ in $v$ konstanti, $w$  ni konstanta, potem $r(t)$ neenakomerno parametrizirana daljica ali premica.
             \item $w = 0$ in $u = \pm v$ ali vsaj eden od $u, v$ ničelni polinom, 
             potem $r(t)$ neenakomerno parametrizirana daljica.
-        \end{itemize}
-
-        $r(t)$ stopnje $n + 2m + 1$, kjer $n = deg(w)$ in $m = max(deg(u),deg(v))$  
-        
-    \end{block}
+            \item $r(t)$ stopnje $n + 2m + 1$, kjer $n = deg(w)$ in $m = max(deg(u),deg(v))$
+        \end{itemize} 
+    \end{opomba}
+      
 \end{frame}
 
 % \begin{frame}
@@ -261,7 +272,7 @@ $$\sigma_k =\sum_{j=max(0,k-m)}^{min(m,k)}\frac{\binom{m}{j}\binom{m}{k-j}}{\bin
 \begin{frame}
     \frametitle{Racionalni odmik PH krivulje}
         \begin{itemize}
-            \item Odmik krivulje $r(t)$ na razdalji $d$ je definiran kot 
+            \item Odmik krivulje $\textbf{r}(t)$ na razdalji $d$ je definiran kot 
                   $$\textbf{r}_d(t) = \textbf{r}(t) + d \textbf{n}(t)$$
             \item Racionalna B\'ezierjeva krivulja
             \item Racionalni odmik kubične PH krivulje je 5. stopnje
