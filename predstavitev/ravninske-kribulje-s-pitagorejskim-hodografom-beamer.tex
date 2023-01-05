@@ -12,7 +12,7 @@
 \usecolortheme{whale}
 \usefonttheme{professionalfonts}
 \usepackage{etoolbox}
-\setbeamertemplate{theorems}[numbered] 
+\setbeamertemplate{theorems}[nonumber]
 \AtBeginEnvironment{theorem}{%
     \setbeamercolor{block title}{fg=white,bg=orange}
     \setbeamercolor{block body}{fg=black,bg=yellow}
@@ -60,7 +60,7 @@
 \item Ravninske krivulje s pitagorejskim hodografom
 \item B\'ezierjeve kontrolne točke krivulj s PH
 \item Parametrična hitrost in dolžina loka
-\item Odvod krivulje
+\item Odvod krivulje 
 \item Racionalni odmiki krivulj s PH
 \end{enumerate}
 \end{frame}
@@ -68,20 +68,23 @@
 \begin{frame}
 \frametitle{Ravninske krivulje s pitagorejskim hodografom}
 \begin{itemize}
-    \item PH krivuluje
+    \item PH krivulje
     \item Rida T. Farouki in Vangelis Sakkalis, 1990
     \item Uporaba v računalniško podprtem oblikovanju, proizvodnji (CNC razrez), robotiki, načrtovanju poti, animacijah... 
     \item Enostaven in natančen izračun dolžine; paralelne krivulje imajo racionalno parametrizacijo.
 \end{itemize}
+\centering
+\includegraphics[width=4cm]{slika_1.jpeg}
+\includegraphics[width=4cm]{slika_2.png}
 \end{frame}
 
 \begin{frame}
     
     \begin{definicija}
         \begin{itemize}
-            \item Hodograf parametrične krivulje $r (t) \in \mathbb{R}^2$ je odvod krivulje same $r\prime (t)$ podan kot parametrična krivulja.
-            \item  Polinomska krivulja $r (t)$ v $\mathbb{R}^n$ je krivulja s Pitagorejskim hodografom (PH), če velja naslednji pogoj:
-            $$x'(t)^2 + y'(t)^2 = \sigma(t)^2 \text{ za nek polinom } \sigma$$.
+            \item Hodograf odvedljive parametrične krivulje $r (t) = \begin{bmatrix} x(t) \\ y(t) \end{bmatrix} \in \mathbb{R}^2$ je definiran s predpisom $$r'(t) = \begin{bmatrix} x'(t) \\ y'(t) \end{bmatrix}.$$
+            \item  Polinomska krivulja $r \in \mathbb{R}^2$ je krivulja s Pitagorejskim hodografom (PH), če velja naslednji pogoj:
+            $$x'(t)^2 + y'(t)^2 = \sigma(t)^2 \text{ za nek polinom } \sigma.$$
         \end{itemize} 
     \end{definicija}
 \end{frame}
@@ -199,18 +202,16 @@ $$\sigma_k =\sum_{j=max(0,k-m)}^{min(m,k)}\frac{\binom{m}{j}\binom{m}{k-j}}{\bin
 \end{frame}
 \begin{frame}
     Dolžina loka:
-    $$s (t) =\int^t_0\sigma(\tau) d\tau,$$.
+    $$s (t) =\int^t_0\sigma(\tau) d\tau,$$
     $$s (t) =\sum^n_{k=0}s_k\binom{n}{k}(1-t)^{n-k}t^k=\sum_{k=0}^n s_kB^n_k(t),$$
-	kjer  $s_0=0$ in $s_k=\frac{1}{n}\sum^{k-1}_{j=0}\sigma_j, k=1,\ldots,n.$.
+	kjer  $$s_0=0 \quad \text{in} \quad s_k=\frac{1}{n}\sum^{k-1}_{j=0}\sigma_j \quad k=1,\ldots,n.$$
 
-    Skupna dolžina loka je S(1). 
+    Skupna dolžina loka je $S(1)$. 
     \newline
     
     Enotska tangenta in normala:
-\begin{itemize}
-    \item $\textbf{t} =\frac{(u^2 - v^2, 2uv)}{\sigma}$
-    \item $\textbf{n} =\frac{(2uv, v^2 - u^2)}{\sigma}$
-\end{itemize}
+    $$\textbf{t} =\frac{(u^2 - v^2, 2uv)}{\sigma} \quad \quad
+     \textbf{n} =\frac{(2uv, v^2 - u^2)}{\sigma}$$
 \end{frame}
 % \begin{frame}
 % \begin{block}{}
@@ -274,22 +275,23 @@ $$\sigma_k =\sum_{j=max(0,k-m)}^{min(m,k)}\frac{\binom{m}{j}\binom{m}{k-j}}{\bin
         \begin{itemize}
             \item Odmik krivulje $\textbf{r}(t)$ na razdalji $d$ je definiran kot 
                   $$\textbf{r}_d(t) = \textbf{r}(t) + d \textbf{n}(t)$$
-            \item Racionalna B\'ezierjeva krivulja
-            \item Racionalni odmik kubične PH krivulje je 5. stopnje
-            \item Homogeni zapis koordinat kontrolnih točk PH krivulje \textbf{r}(t):
-                  $$ \textbf{P}_k = (W_k, X_k, Y_k) = (1, x_k, y_k), k = 0, ..., n$$
+            \item Racionalni odmik PH krivulje lahko predstavimo kot:
+                  $$ \textbf{r}_d(t) = \left(\frac{X(t)}{W(t)}, \frac{Y(t)}{W(t)}\right)$$ 
+            \item Kontrolne točke paralelne racionalne PH krivulje:
+                  $$\textbf{O}_k = \sum_{j=\max(0, k-n)}^{\min(n-1, k)} \frac{\binom{n-1}{j} \binom{n}{k-j}}{\binom{2n-1}{k}}(\sigma_j \textbf{P}_{k-j}+ d n \Delta\textbf{P}^\perp_j),$$ 
+                  $$k=0, ..., 2n-1$$
         \end{itemize}
+
     \end{frame}
     \begin{frame}
         \begin{itemize}
-            \item Racionalni odmik PH krivulje lahko predstavimo kot:
-                  $$ \textbf{r}_d(t) = \left(\frac{X(t)}{W(t)}, \frac{Y(t)}{W(t)}\right)$$ 
+            \item Racionalni odmik kubične PH krivulje je 5. stopnje
+            \item Homogeni zapis koordinat kontrolnih točk PH krivulje \textbf{r}(t):
+                  $$ \textbf{P}_k = (W_k, X_k, Y_k) = (1, x_k, y_k), \quad k = 0, ..., n$$
             \item Pri tem so
                   $$\textbf{O}_k = (W_k, X_k, Y_k), k = 0, ..., 2n-1$$
                   kontrolne točke racionalnega odmika.
-            \item Zapišemo jih lahko tudi drugače:
-                  $$\textbf{O}_k = \sum_{j=\max(0, k-n)}^{\min(n-1, k)} \frac{\binom{n-1}{j} \binom{n}{k-j}}{\binom{2n-1}{k}}(\sigma_j \textbf{P}_{k-j}+ d n \Delta\textbf{P}^\perp_j),$$ 
-                  $$k=0, ..., 2n-1$$
+            
         \end{itemize}
     \end{frame}
     

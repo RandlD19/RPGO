@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.17)  5 JAN 2023 17:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.17)  5 JAN 2023 21:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -692,40 +692,51 @@ Overfull \hbox (5.18661pt too wide) has occurred while \output is active
 [2
 
 ]
+<slika_1.jpeg, id=96, 259.97125pt x 194.7275pt>
+File: slika_1.jpeg Graphic file (type jpg)
+<use slika_1.jpeg>
+Package pdftex.def Info: slika_1.jpeg  used on input line 79.
+(pdftex.def)             Requested size: 113.81102pt x 85.24654pt.
+<slika_2.png, id=97, 1204.5pt x 999.735pt>
+File: slika_2.png Graphic file (type png)
+<use slika_2.png>
+Package pdftex.def Info: slika_2.png  used on input line 79.
+(pdftex.def)             Requested size: 113.81102pt x 94.45715pt.
+
 Overfull \hbox (5.18661pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [3
 
-]
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 87.
+ </Users/damijanrandl/Desktop/ISRM/letnik_1/RPGO/seminarska-naloga/RPGO/predstavitev/slika_1.jpeg> </Users/damijanrandl/Desktop/ISRM/letnik_1/RPGO/seminarska-naloga/RPGO/predstavitev/slika_2.png>]
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 90.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 87.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 90.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 87.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 90.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 87.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 90.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 87.
+(Font)              <12> on input line 90.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 87.
+(Font)              <8> on input line 90.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 87.
-LaTeX Font Info:    Try loading font information for U+msa on input line 87.
+(Font)              <6> on input line 90.
+LaTeX Font Info:    Try loading font information for U+msa on input line 90.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 87.
+LaTeX Font Info:    Try loading font information for U+msb on input line 90.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -737,7 +748,7 @@ Overfull \hbox (5.18661pt too wide) has occurred while \output is active
 
 ]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 101.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 104.
 
 Overfull \hbox (5.18661pt too wide) has occurred while \output is active
  [][][][]  
@@ -818,25 +829,25 @@ Overfull \hbox (5.18661pt too wide) has occurred while \output is active
 \tf@snm=\write7
 \openout7 = `ravninske-kribulje-s-pitagorejskim-hodografom-beamer.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 313.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 313.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 315.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 315.
  (/Users/damijanrandl/Desktop/ISRM/letnik_1/RPGO/seminarska-naloga/RPGO/predstavitev/ravninske-kribulje-s-pitagorejskim-hodografom-beamer.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 313.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 313.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 315.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 315.
  ) 
 Here is how much of TeX's memory you used:
- 18700 strings out of 492616
- 352740 string characters out of 6129480
- 440707 words of memory out of 5000000
- 22141 multiletter control sequences out of 15000+600000
+ 18716 strings out of 492616
+ 353027 string characters out of 6129480
+ 440705 words of memory out of 5000000
+ 22153 multiletter control sequences out of 15000+600000
  45063 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,15n,59p,923b,727s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsso12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /Users/damijanrandl/Desktop/ISRM/letnik_1/RPGO/seminarska-naloga/RPGO/predstavitev/ravninske-kribulje-s-pitagorejskim-hodografom-beamer.pdf (14 pages, 236811 bytes).
+ 56i,15n,59p,923b,729s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsso12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on /Users/damijanrandl/Desktop/ISRM/letnik_1/RPGO/seminarska-naloga/RPGO/predstavitev/ravninske-kribulje-s-pitagorejskim-hodografom-beamer.pdf (14 pages, 417192 bytes).
 PDF statistics:
- 550 PDF objects out of 1000 (max. 8388607)
- 461 compressed objects within 5 object streams
+ 543 PDF objects out of 1000 (max. 8388607)
+ 455 compressed objects within 5 object streams
  29 named destinations out of 1000 (max. 500000)
- 325 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 317 words of extra memory for PDF output out of 10000 (max. 10000000)
 
