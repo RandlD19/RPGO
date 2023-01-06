@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.17)  5 JAN 2023 21:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.17)  6 JAN 2023 10:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -673,19 +673,19 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 ) (/Users/damijanrandl/Desktop/ISRM/letnik_1/RPGO/seminarska-naloga/RPGO/predstavitev/ravninske-kribulje-s-pitagorejskim-hodografom-beamer.nav)
-Overfull \hbox (5.18661pt too wide) in paragraph at lines 52--52
+Overfull \hbox (2.07204pt too wide) in paragraph at lines 52--52
  [][][][]  
  []
 
 
-Overfull \hbox (5.18661pt too wide) has occurred while \output is active
+Overfull \hbox (2.07204pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (5.18661pt too wide) has occurred while \output is active
+Overfull \hbox (2.07204pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -703,7 +703,7 @@ File: slika_2.png Graphic file (type png)
 Package pdftex.def Info: slika_2.png  used on input line 79.
 (pdftex.def)             Requested size: 113.81102pt x 94.45715pt.
 
-Overfull \hbox (5.18661pt too wide) has occurred while \output is active
+Overfull \hbox (2.07204pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -740,7 +740,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 90.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (5.18661pt too wide) has occurred while \output is active
+Overfull \hbox (2.07204pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -750,76 +750,92 @@ Overfull \hbox (5.18661pt too wide) has occurred while \output is active
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 104.
 
-Overfull \hbox (5.18661pt too wide) has occurred while \output is active
+Overfull \hbox (2.07204pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [5
 
 ]
-Overfull \hbox (5.18661pt too wide) has occurred while \output is active
+Overfull \hbox (2.07204pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [6
 
 ]
-Overfull \hbox (5.18661pt too wide) has occurred while \output is active
+Overfull \hbox (2.07204pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [7
 
 ]
-Overfull \hbox (5.18661pt too wide) has occurred while \output is active
+Overfull \hbox (2.07204pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [8
 
 ]
-Overfull \hbox (5.18661pt too wide) has occurred while \output is active
+Overfull \hbox (2.07204pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [9
 
 ]
-Overfull \hbox (5.18661pt too wide) has occurred while \output is active
+Overfull \hbox (2.07204pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [10
 
 ]
-Overfull \hbox (5.18661pt too wide) has occurred while \output is active
+Overfull \hbox (2.07204pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [11
 
 ]
-Overfull \hbox (5.18661pt too wide) has occurred while \output is active
+Overfull \hbox (2.07204pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [12
 
 ]
-Overfull \hbox (5.18661pt too wide) has occurred while \output is active
+Overfull \hbox (2.07204pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [13
 
 ]
-Overfull \hbox (5.18661pt too wide) has occurred while \output is active
+<slika_5.png, id=461, 330.23375pt x 248.93pt>
+File: slika_5.png Graphic file (type png)
+<use slika_5.png>
+Package pdftex.def Info: slika_5.png  used on input line 311.
+(pdftex.def)             Requested size: 113.81102pt x 85.78978pt.
+<slika_4.png, id=463, 331.2375pt x 248.93pt>
+File: slika_4.png Graphic file (type png)
+<use slika_4.png>
+Package pdftex.def Info: slika_4.png  used on input line 311.
+(pdftex.def)             Requested size: 113.81102pt x 85.52768pt.
+<slika_3.png, id=464, 461.725pt x 263.98625pt>
+File: slika_3.png Graphic file (type png)
+<use slika_3.png>
+Package pdftex.def Info: slika_3.png  used on input line 311.
+(pdftex.def)             Requested size: 199.16928pt x 113.87036pt.
+
+Overfull \hbox (2.07204pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [14
 
-]
+ </Users/damijanrandl/Desktop/ISRM/letnik_1/RPGO/seminarska-naloga/RPGO/predstavitev/slika_5.png> </Users/damijanrandl/Desktop/ISRM/letnik_1/RPGO/seminarska-naloga/RPGO/predstavitev/slika_4.png> </Users/damijanrandl/Desktop/ISRM/letnik_1/RPGO/seminarska-naloga/RPGO/predstavitev/slika_3.png>]
 \tf@nav=\write5
 \openout5 = `ravninske-kribulje-s-pitagorejskim-hodografom-beamer.nav'.
 
@@ -829,25 +845,25 @@ Overfull \hbox (5.18661pt too wide) has occurred while \output is active
 \tf@snm=\write7
 \openout7 = `ravninske-kribulje-s-pitagorejskim-hodografom-beamer.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 315.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 315.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 313.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 313.
  (/Users/damijanrandl/Desktop/ISRM/letnik_1/RPGO/seminarska-naloga/RPGO/predstavitev/ravninske-kribulje-s-pitagorejskim-hodografom-beamer.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 315.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 315.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 313.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 313.
  ) 
 Here is how much of TeX's memory you used:
- 18716 strings out of 492616
- 353027 string characters out of 6129480
+ 18731 strings out of 492616
+ 353249 string characters out of 6129480
  440705 words of memory out of 5000000
- 22153 multiletter control sequences out of 15000+600000
+ 22165 multiletter control sequences out of 15000+600000
  45063 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,15n,59p,923b,729s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsso12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /Users/damijanrandl/Desktop/ISRM/letnik_1/RPGO/seminarska-naloga/RPGO/predstavitev/ravninske-kribulje-s-pitagorejskim-hodografom-beamer.pdf (14 pages, 417192 bytes).
+Output written on /Users/damijanrandl/Desktop/ISRM/letnik_1/RPGO/seminarska-naloga/RPGO/predstavitev/ravninske-kribulje-s-pitagorejskim-hodografom-beamer.pdf (14 pages, 528165 bytes).
 PDF statistics:
- 543 PDF objects out of 1000 (max. 8388607)
+ 548 PDF objects out of 1000 (max. 8388607)
  455 compressed objects within 5 object streams
  29 named destinations out of 1000 (max. 500000)
- 317 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 326 words of extra memory for PDF output out of 10000 (max. 10000000)
 
