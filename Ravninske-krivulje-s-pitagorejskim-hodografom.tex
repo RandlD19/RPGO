@@ -3,6 +3,8 @@
    \usepackage[slovene]{babel}
 \usepackage{amsthm,amsfonts,amsmath,amssymb,url}
 \usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{graphics}
 
 \textheight 210 true mm
 \textwidth 146 true mm
@@ -34,48 +36,91 @@
 \newcommand{\Mod}[1]{\hbox{ (mod } #1)}
 
 \begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+\begin{Large}
+{\bf Ravninske krivulje s pitagorejskim hodografom}
+\end{Large}
+\\[5mm]
+\begin{large}
+Seminarska naloga pri predmetu {\em Računalniško podprto geometrijsko oblikovanje }
+\\[5mm]
+\begin{center}
+	\includegraphics{fmf.png}	
+\end{center}
+\vspace*{\fill}
+
+{\sc Damijan Randl in Tit Arnšek}
+\\[10mm]
+~januar, 2020
+\end{large}
+
+\end{center}
+
+\newpage
+\tableofcontents
+\newpage
+\setcounter{page}{1}
 % UVOD - ??
+
 \section{Uvod}
-Polinomske krivulje s pitagorejskim hodografom (PH krivulje) sta prvič predstavila Farouki in Sakkalis leta 1990.
-Karakterizirane so z lastnostjo, da je njihova parametrična hitrost oziroma odvod ločne dolžine v odvisnosti od parametra,
-polinomska funkcija. Polinomske PH krivulje tvorijo pomemben razred parametričnih polinomskih krivulj
-za katere velja, da je njihova ločna dolžina lahko določena eksaktno in da so njeni odmiki (paralelne krivulje) racionalne krivulje.
-Zaradi naštetih lastnosti so zelo uporabne v sistemih CAD/CAM, robotiki, animacijah, NC machining??, spatial path planning based on rotation-minimizing frames?????...
+Polinomske krivulje s pitagorejskim hodografom (PH krivulje) sta prvič predstavila Farouki in Sakkalis, leta 1990.
+V zadnjih letih so te krivulje postale aktivno področje raziskav,
+to pa zaradi svojih posebnih lastnosti, 
+saj imajo prednost pri uporabi v računalniško podprtem oblikovanju,
+proizvodnji (CNC razrez), robotiki, načrtovanju poti, animacijah in v drugih 
+podobnih področjih. Glavni razlog je v tem, da lahko njihovo dolžinono enostavno izračuna natančno,
+njihove paralelne krivulje pa imajo vedno racionalno parametrizacijo.
+\newline
+Za splošne krivulje ti dve lastnosti ne veljata vedno, 
+kar lahko v praksi povzroči določene probleme (naprimer, pri dizajniranju paralelne krivulje 
+moramo iskati numerične približke, kar je lahko časovno zahtevno,
+zaradi iskanja približkov pa lahko pride tudi do napak).
 
-% RAVNINSKE KRIVULJE S PITAGOREJSKIM HODOGRAFOM - TIT 
+\section{PH krivulje}
 
-Hodograf parametično podane odvedljive krivulje $r = (x(t), y(t))^T$ je krivulja, 
-podana s predpisom $r' = (x', y')^T$, pravzaprav gre za odvod podane krivulje. 
-Krivulje s pitagorejskim hodografom so polinomske parametrične krivulje, 
-ki zadoščajo naslednjemu pogoju:
-$x'^2 + y'^2 = ro^2$ za nek polinom $ro$.
-Krajše jih imenjujemo tudi PH krivulje. 
-Zaradi lepih lastnosti jih pogosto uporabljamo v...
+\begin{Definicija}
+	
+	Hodograf odvedljive parametrične krivulje $r (t) = \begin{bmatrix} x(t) \\ y(t) \end{bmatrix} \in \mathbb{R}^2$ 
+	je definiran s predpisom $$r'(t) = \begin{bmatrix} x'(t) \\ y'(t) \end{bmatrix}.$$
+\end{Definicija}
+\begin{Definicija}
+	Polinomska krivulja $r \in \mathbb{R}^2$ je krivulja s Pitagorejskim hodografom (PH), če velja naslednji pogoj:
+	$$x'(t)^2 + y'(t)^2 = \sigma(t)^2, \text{ za nek polinom } \sigma.$$
+\end{Definicija}
 
-Za izpeljavo lastnosti v nadaljevanju, bomo potrebovali naslednji izrek:
-Izrek (Kubota)
-Polinomi a, b in c zadostijo pitagorejskemu pogoju
-$$a^2(t) + b^2(t) = c^2(t),$$
-natanko tedaj, ko jih lahko izrazimo z drugimi polinomi $u(t), v(t) in w(t)$ v obliki
-$$a(t) = (u^2(t) - v^2(t))w(t),$$
-$$b(t) = 2uvw,$$
-$$c(t) = (u^2 + v^2)w,$$
-kjer u in v nimata paroma skupnih ničel
-Dokaz: ...
-
-Opombe:
+\begin{Izrek}{Kubota}\newline
+	Polinomi $a$, $b$ in $c$ zadostijo pitagorejskemu pogoju
+	$$a^2(t) + b^2(t) = c^2(t),$$
+	natanko tedaj, ko jih lahko izrazimo s polinomi $u(t), v(t)$ in $w(t)$ v obliki
+	$$a(t) = (u^2(t) - v^2(t))w(t),$$
+	$$b(t) = 2u(t)v(t)w(t),$$
+	$$c(t) = (u^2(t) + v^2(t))w(t),$$
+	kjer $u$ in $v$ nimata skupnih ničel.
+\end{Izrek}
+Dokaz: ...TODO\newline
+% Karakterizirane so z lastnostjo, da je njihova parametrična hitrost oziroma odvod ločne dolžine v odvisnosti od parametra,
+% polinomska funkcija. Polinomske PH krivulje tvorijo pomemben razred parametričnih polinomskih krivulj
+% za katere velja, da je njihova ločna dolžina lahko določena eksaktno in da so njeni odmiki (paralelne krivulje) racionalne krivulje.
+% Zaradi naštetih lastnosti so zelo uporabne v sistemih CAD/CAM, robotiki, animacijah, NC machining??, spatial path planning based on rotation-minimizing frames?????...
+Za Ph krivulje torej velja naslenje:
+$$x'(t) = (u^2(t) - v^2(t))w(t),$$
+$$y'(t) = 2u(t)v(t)w(t),$$
+$$\sigma(t) = (u^2(t) + v^2(t))w(t),$$
+Oglejmo si nekaj robnih primerov:
 \begin{itemize}
-	\item Če velja, da je $w=0$ ali pa je $u=v=0$, potem taka PH krivulja $r(t)$ predstavlja točko.
-	\item Če so u, b in w konstante in $w \neq 0$, ter vsaj eden od polinomov u ali v neničelna konstanta,
+	\item Če velja, da je $w\equiv0$ ali $u\equiv v \equiv 0$, potem $r(t)$ predstavlja točko.
+	\item Če so $u$, $v$ in $w$ konstante in $w \not\equiv 0$, vsaj eden od $u, v$ neničelna konstanta, potem $r(t)$ predstavlja enakomerno parametrizirano daljico.
 	potem je PH krivulja enakomerno parametrizirana daljica.
-	\item Če sta u in v konstanti, w pa ni konstanta je PH krivulja neenakomerno parametrizirana daljica ali premica.
-	\item Če je $w = 0$ in $u = +-v$ ali pa je vsaj eden od u, v ničelni polinom, 
-	potem je PH krivulja neenakomerno parametrizirana daljica.
+	\item Če sta $u$ in $v$ konstanti, $w$  ni konstanta, potem je  $r(t)$ neenakomerno parametrizirana daljica ali premica.
+	\item Če je $w \not\equiv 0$ in $u = \pm v$ ali vsaj eden od $u, v$ ničelni polinom, 
+	potem $r(t)$ neenakomerno parametrizirana daljica.
 \end{itemize}
-
-Opomba:
-Če je w polinom stopnje n in z m označimo večjo izmed stopenj polinomov u in v, 
-potem je PH krivulja dobljena z integracijo hodografa stopnje k = n + 2m + 1
+\begin{Opomba}
+	Če je $w$ polinom stopnje $n$ in z $m$ označimo večjo izmed stopenj polinomov $u$ in $v$, 
+potem je PH krivulja dobljena z integracijo hodografa stopnje $k = n + 2m + 1$
+\end{Opomba}
 
 % BEZIERJEVE KONTROLNE TOČKE KRIVULJ S PH - DAMIJAN
 \section{B\'ezierjeve kontrolne točke PH krivulj}
@@ -107,64 +152,59 @@ $$b_2 = b_1 + \frac{1}{3}*(u_0*u_1 - v_0*v_1, u_0*u_1 + v_0*v_1)^T,$$
 $$b_3 = b_2 + \frac{1}{3}*(u_1^2 - v_1^2, 2*u_1*v_1)^T,$$
 
 Pri tem je $p_0$ prosto izbrana kontrolna točka (zaradi konstante pri integraciji).
-
+\section{Parametrična hitrost in dolžina loka}
 % PARAMETRIČNA HITROST IN DOLŽINA LOKA - TIT
-\section*{Parametrična hitrost in dolžina loka}
+% \section*{Parametrična hitrost in dolžina loka}
 
-parametrična hitrost regularne PH krivulje $r(t) = (x(t), y(t))$ je podana s predpisom:
-$$ | r\prime (t) | =\sqrt{x\prime^2(t)+y\prime^2(t)}= u^2 (t) + v^2 (t) = \sigma (t),$$
-in je polinom v $t$. 
-Iz lastnosti, da je krivulja $r$, ki jo dobimo z integrinjanjem stopnje (n = 2m + 1) sledi
-da morata biti u in v stopnje  $m = \frac{1}{2}(n - 1)$. Zapišemu ju lahko v 
+Parametrična hitrost regularne PH krivulje $r(t) = (x(t), y(t))$ je podana s predpisom:
+$$ || r\prime (t) || =\sqrt{x\prime^2(t)+y\prime^2(t)}= u^2 (t) + v^2 (t) = \sigma (t)$$
+in je polinom. \newline
+Iz lastnosti, da je krivulja $r$, ki jo dobimo z integrinjanjem stopnje $n = 2m + 1$, sledi
+da morata biti polinoma $u$ in $v$ stopnje  $m = \frac{1}{2}(n - 1)$. Zapišemu ju lahko v 
 Bernstainovi bazi:
 
-	$u (t)=\sum_{k=0}^m u_kB_k^m(t)$, 
-	$v (t) =\sum_{k=0}^m v_kB_k^m(t).$
+	$$u (t)=\sum_{k=0}^m u_kB_k^m(t) \text{ in } v (t) =\sum_{k=0}^m v_kB_k^m(t).$$
+	
 
-Potem je 
-$$\sigma (t) =\sum_{k=0}^{n-1} \sigma_kB_k^{n-1}(t),$$, 
-kjer so koeficienti 
-$$\sigma_k =\sum_{j=max(0,k-m)}^{min(m,k)}\frac{\binom{m}{j}\binom{m}{k-j}}{\binom{n-1}{k}}(u_ju_{k-j}+v_jv_{k-j}),$$ $$k = 0,\ldots , n - 1.$$
+Izkaže se, da je 
+$$\sigma (t) =\sum_{k=0}^{n-1} \sigma_kB_k^{n-1}(t), \text{kjer so koeficienti }$$ 
 
-Če pogledamo primer od zgoraj(kubično B. krivuljo) dobimo naslednje koeficiente za sigmo :
+$$\sigma_k =\sum_{j=max(0,k-m)}^{min(m,k)}\frac{\binom{m}{j}\binom{m}{k-j}}{\binom{n-1}{k}}(u_ju_{k-j}+v_jv_{k-j}), k = 0,\ldots , n - 1.$$
+\newline
+Če pogledamo primer od zgoraj(kubično B. krivuljo) dobimo naslednje koeficiente za $\sigma $ :
 
 $\sigma_0 = u^2_0+ v^2_0, $
-$\sigma_1 = u_0u_1 + v_0v_1,$ 
+$\sigma_1 = u_0u_1 + v_0v_1,$ in  
 $\sigma_2 = u^2_1+ v^2_1.$
-
-Poglejmo si sedaj še dolžino loka s.
-To dobimo kot:
-$$s (t) =\int^t_0\sigma(\tau) d\tau,$$.
-Pri računanju integrala upoštevamo integracijsko pravilo za B. bazne polinome 
-DOPIŠI PRAVILO ZDAJ ALI PA ŽE PREJ KO GA UPORABIMA PRI ENI IZPELJAVI
-Zgornji izraz se nam poenostavi v 
+\newline
+Dolžino loka dobimo na naslednji način:
+$$s (t) =\int^t_0\sigma(\tau) d\tau.$$
+Z upoštevanjem integracijskega pravila se nam zgornji izraz poenostavi: 
 $$s (t) =\sum^n_{k=0}s_k\binom{n}{k}(1-t)^{n-k}t^k=\sum_{k=0}^n s_kB^n_k(t),$$
-	kjer je $s_0=0$ in $s_k=\frac{1}{n}\sum^{k-1}_{j=0}\sigma_j, k=1,\ldots,n.$.
+kjer je $s_0=0$ in $s_k=\frac{1}{n}\sum^{k-1}_{j=0}\sigma_j, k=1,\ldots,n.$
+\begin{Opomba}
+	Skupna dolžina loka je $S(1)$. 
+\end{Opomba}
 
-Skupna dolžina loka je tako S(1). 
+Iz lastnosti odvoda PH krivlj sledi, da so enotski tangentni vektor,
+normala in ukrivljenost racionalno odvisni od parametra krivulje. Natančeneje: 
+$$\textbf{t} =\frac{(u^2 - v^2, 2uv)}{\sigma},\hspace{10pt} \textbf{n} =\frac{(2uv, v^2 - u^2)}{\sigma},\hspace{10pt} \kappa = 2 \frac{uv\prime - u\prime v}{\sigma^2}.$$
 
-Običajno smo za  b. krivulje prikazali z vrednotenjem vrednosti parametrov  $t_0,\ldots , t_N$,
-(enakomerni razmik med parametri )... 
-ampak smo s tem dobili neenakomerno porazdeljene točke na krivulji, saj parametrična 
+\subsection*{Newton-Raphsonova iteracija}
+Običajno se Bezierjeve krivulje prikaže z vrednotenjem vrednosti parametrov  $t_0,\ldots , t_N$, kjer so bili razmiki enakomerni.
+S tem se običajno dobi neenakomerno porazdeljene točke na krivulji, saj parametrična 
 hitrost, v splošnem, ni konstantna.
 Če želimo doseči, da bodo točke $s(t_k)$ vseeno enakomerno porazdeljene na grafu,
 lahko to dosežemo tako, da za vsak $t_k$ izračunamo nov paramater, ki ga dobimo 
 s pomočjo Newton-Raphsonove iteracije: 
 $$t^{(0)}_k = t_{k-1}+\frac{\Delta s}{\sigma(t_{k-1})}$$
 $$t^{(r)}_k = t^{(r-1)}_k-\frac{s(t^{(r-1)}_k)-k\Delta s}{\sigma(t^{(r-1)}_k)}, r = 1, 2,\ldots.$$
+Za dobre rezultate je dovolj že nekaj iteracij.
 
-Za dobre rezultate je dovolj že nekaj iteracij. KOOLLIKO JE TO??? (DVA ALI TRI PIŠE V ANGLEŠKEM ČLANKU)
 
-% ODVOD KRIVULJE - TIT 
-\section*{Odvod krivulje}
-Iz lastnosti odvoda PH krivlja sledi tudi, da so enotski tangentni vektor,
-normala in ukrivljenost racionalno odvisni od parametra krivulje. Natancneje, ˇ
-definirani so v smislu polinomov u(t) in v(t), in sicer: 
-
-$$\textbf{t} =\frac{(u^2 - v^2, 2uv)}{\sigma},\hspace{10pt} \textbf{n} =\frac{(2uv, v^2 - u^2)}{\sigma},\hspace{10pt} \kappa = 2 \frac{uv\prime - u\prime v}{\sigma^2}.$$
 
 % RACIONALNI ODMIKI KRIVULJ S PH - DAMIJAN 
-\section*{Racionalni odmiki PH krivulj}
+\section{Racionalni odmiki PH krivulj}
 Racionalni odmiki PH krivulj
 Odmik krivulje r(t) je v splošnem definiran kot
 $$ r_d(t) = r(t) + dn(t)$$
