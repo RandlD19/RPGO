@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.31)  25 JAN 2023 22:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.31)  27 JAN 2023 10:03
 entering extended mode
 **c:/Users/Uporabnik/Desktop/RPGO/Seminarska/RPGO/Ravninske-krivulje-s-pitagorejskim-hodografom.tex
 (c:/Users/Uporabnik/Desktop/RPGO/Seminarska/RPGO/Ravninske-krivulje-s-pitagorejskim-hodografom.tex
@@ -311,7 +311,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\Uporabnik\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-<fmf.png, id=23, 220.33537pt x 141.1248pt>
+<fmf.png, id=27, 220.33537pt x 141.1248pt>
 File: fmf.png Graphic file (type png)
 <use fmf.png>
 Package pdftex.def Info: fmf.png  used on input line 50.
@@ -345,20 +345,20 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has b
 l.147 ...*B_1^3(t) + b_2*B_2^3(t) + b_3*B_3^3(t)$$
                                                    [2] [3] [4] [5] [6] (Ravninske-krivulje-s-pitagorejskim-hodografom.aux)
 Package rerunfilecheck Info: File `Ravninske-krivulje-s-pitagorejskim-hodografom.out' has not changed.
-(rerunfilecheck)             Checksum: 839480D75E21840F8EC5E58DB8D38BB8;843.
+(rerunfilecheck)             Checksum: 8E31D0CD8860CC8DD018A38E44C188AD;982.
  ) 
 Here is how much of TeX's memory you used:
- 10459 strings out of 478907
- 155943 string characters out of 2849995
+ 10461 strings out of 478907
+ 155963 string characters out of 2849995
  477426 words of memory out of 3000000
- 28172 multiletter control sequences out of 15000+600000
+ 28173 multiletter control sequences out of 15000+600000
  412548 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,8n,66p,374b,394s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Uporabnik\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Uporabnik/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Uporabnik/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Uporabnik/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Uporabnik/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Uporabnik/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Uporabnik/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Uporabnik/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Uporabnik/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Uporabnik/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Uporabnik/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Uporabnik/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Ravninske-krivulje-s-pitagorejskim-hodografom.pdf (8 pages, 210702 bytes).
+Output written on Ravninske-krivulje-s-pitagorejskim-hodografom.pdf (8 pages, 211815 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 19 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 144 PDF objects out of 1000 (max. 8388607)
+ 20 named destinations out of 1000 (max. 500000)
+ 54 words of extra memory for PDF output out of 10000 (max. 10000000)
 
