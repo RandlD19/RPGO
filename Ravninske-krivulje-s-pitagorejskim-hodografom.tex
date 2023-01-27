@@ -4,7 +4,9 @@
 \usepackage{amsthm,amsfonts,amsmath,amssymb,url}
 \usepackage{hyperref}
 \usepackage{xcolor}
-\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
 
 \textheight 210 true mm
 \textwidth 146 true mm
@@ -60,6 +62,8 @@ Seminarska naloga pri predmetu {\em Računalniško podprto geometrijsko oblikova
 
 \newpage
 \tableofcontents
+
+% \listoffigures
 \newpage
 \setcounter{page}{1}
 % UVOD - ??
@@ -99,7 +103,7 @@ zaradi iskanja približkov pa lahko pride tudi do napak).
 	$$c(t) = (u^2(t) + v^2(t))w(t),$$
 	kjer $u$ in $v$ nimata skupnih ničel.
 \end{Izrek}
-Dokaz: ...TODO\newline
+Dokaz zgornjega izreka je malo daljši. Podrobno je opisan v  \cite{knjiga} na strani 382.
 % Karakterizirane so z lastnostjo, da je njihova parametrična hitrost oziroma odvod ločne dolžine v odvisnosti od parametra,
 % polinomska funkcija. Polinomske PH krivulje tvorijo pomemben razred parametričnih polinomskih krivulj
 % za katere velja, da je njihova ločna dolžina lahko določena eksaktno in da so njeni odmiki (paralelne krivulje) racionalne krivulje.
@@ -236,12 +240,36 @@ $$ O_4 = \frac{1}{5} [3\sigma_2 P_2 + 2\sigma_1 P_3 + 3 d (2\Delta P_1^{\perp} +
 $$ O_5 = \sigma_2 P_3 + 3 d \Delta P_2^{\perp}$$
 
 
+% \begin{figure}[h]
+% 	\centering
+% 	\begin{minipage}{.5\textwidth}
+% 		\centering
+% 		\includegraphics[width=.4\linewidth]{slika_5.png}
+% 		\caption{Bezierjeva krivulja stopnje 5 z odmikoma}
+% 		\label{fig:n2m3}
+% 	\end{minipage}%
+
+% 	\begin{minipage}{.5\textwidth}
+% 		\centering
+% 		\includegraphics[width=.4\linewidth]{slika_4.png}
+% 		\caption{Bezierjeva krivulja stopnje 3 z odmiki}
+% 		\label{fig:n3m4}
+% 	\end{minipage}
+% 	\label{fig:nm}
+% \end{figure}
+\begin{figure}[h]
+    \centering
+    \subfloat[\centering label 1]{{\includegraphics[width=5cm]{slika_5.png} }}%
+    \qquad
+    \subfloat[\centering label 2]{{\includegraphics[width=5cm]{slika_4.png} }}%
+    \caption{2 Figures side by side}%
+    \label{fig:example}%
+\end{figure}
 
 
-\section{Viri in literatura}
-\begin{itemize}
-	\item prvi Viri
-	\item drugi Viri
-\end{itemize}
+
+\begin{thebibliography}{1}
+	\bibitem{knjiga} R. T. Farouki: \textit{Pythagorean-Hodograph Curves: Algebra and Geometry Inseparable}, Springer, 2008
+\end{thebibliography}
 
 \end{document}
