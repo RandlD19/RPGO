@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.17)  27 JAN 2023 12:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.17)  27 JAN 2023 14:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -353,9 +353,9 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.185 $$
-        s (t) =\int^t_0\sigma(\tau) d\tau.$$] [4] [5]
+        s (t) =\int^t_0\sigma(\tau) d\tau.$$] [4] [5] [6]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 253.
- [6pdfTeX warning (ext4): destination with the same identifier (name{cite.knjiga}) has been already used, duplicate ignored
+ [7pdfTeX warning (ext4): destination with the same identifier (name{cite.knjiga}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -374,18 +374,18 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 253.
  ) 
 Here is how much of TeX's memory you used:
- 6973 strings out of 492616
- 99680 string characters out of 6129480
+ 6974 strings out of 492616
+ 99686 string characters out of 6129480
  207966 words of memory out of 5000000
  10786 multiletter control sequences out of 15000+600000
  12421 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,11n,35p,332b,396s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /Users/damijanrandl/Desktop/ISRM/letnik_1/RPGO/seminarska-naloga/RPGO/Ravninske-krivulje-s-pitagorejskim-hodografom.pdf (8 pages, 189163 bytes).
+Output written on /Users/damijanrandl/Desktop/ISRM/letnik_1/RPGO/seminarska-naloga/RPGO/Ravninske-krivulje-s-pitagorejskim-hodografom.pdf (9 pages, 189383 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
- 107 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 500000)
+ 136 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
