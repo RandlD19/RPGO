@@ -3,4 +3,4 @@
 \contentsline {section}{\numberline {2}PH krivulje}{1}{section.2}%
 \contentsline {section}{\numberline {3}B\'ezierjeve kontrolne točke PH krivulj}{2}{section.3}%
 \contentsline {section}{\numberline {4}Parametrična hitrost in dolžina loka}{3}{section.4}%
-\contentsline {section}{\numberline {5}Racionalni odmiki PH krivulj}{5}{section.5}%
+\contentsline {section}{\numberline {5}Racionalni odmiki PH krivulj}{4}{section.5}%

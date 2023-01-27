@@ -59,8 +59,7 @@
 \begin{enumerate}
 \item Ravninske krivulje s pitagorejskim hodografom
 \item B\'ezierjeve kontrolne točke krivulj s PH
-\item Parametrična hitrost in dolžina loka
-\item Odvod krivulje 
+\item Parametrična hitrost in dolžina loka 
 \item Racionalni odmiki krivulj s PH
 \end{enumerate}
 \end{frame}
@@ -68,8 +67,8 @@
 \begin{frame}
 \frametitle{Ravninske krivulje s pitagorejskim hodografom}
 \begin{itemize}
-    \item PH krivulje
-    \item Rida T. Farouki in Vangelis Sakkalis, 1990
+    \item PH krivulje,
+    \item Rida T. Farouki in Vangelis Sakkalis, 1990,
     \item Uporaba v računalniško podprtem oblikovanju, proizvodnji (CNC razrez), robotiki, načrtovanju poti, animacijah... 
     \item Enostaven in natančen izračun dolžine; paralelne krivulje imajo racionalno parametrizacijo.
 \end{itemize}
@@ -92,11 +91,13 @@
 \begin{frame}
     \begin{izrek}[Kubota]
         Polinomi $a$, $b$ in $c$ zadostijo pitagorejskemu pogoju
-        $$a^2(t) + b^2(t) = c^2(t),$$
+        $$a^2(t) + b^2(t) = c^2(t)$$
         natanko tedaj, ko jih lahko izrazimo s polinomi $u(t), v(t)$ in $w(t)$ v obliki
-        $$a(t) = (u^2(t) - v^2(t))w(t),$$
-        $$b(t) = 2u(t)v(t)w(t),$$
-        $$c(t) = (u^2(t) + v^2(t))w(t),$$
+        \begin{eqnarray}
+            a(t) &=&(u^2(t) - v^2(t))w(t),\nonumber\\
+            b(t) &=& 2u(t)v(t)w(t),\nonumber\\
+            c(t) &=& (u^2(t) + v^2(t))w(t)\nonumber
+        \end{eqnarray}
         ter $u$ in $v$ nimata skupnih ničel.
         
     \end{izrek}
@@ -111,13 +112,13 @@
     % \end{itemize}
     \begin{opomba}
         \begin{itemize}
-            \item  $w\equiv0$ ali $u\equiv v \equiv 0$, potem $r(t)$ predstavlja točko.
+            \item  $w\equiv0$ ali $u\equiv v \equiv 0$, potem $\textbf{r}(t)$ predstavlja točko.
             \item $u$, $v$ in $w$ konstante in $w \not\equiv 0$, vsaj eden od $u, v$ neničelna konstanta,
-            potem $r(t)$ enakomerno parametrizirana daljica.
-            \item $u$ in $v$ konstanti, $w$  ni konstanta, potem $r(t)$ neenakomerno parametrizirana daljica ali premica.
+            potem $\textbf{r}(t)$ enakomerno parametrizirana daljica.
+            \item $u$ in $v$ konstanti, $w$  ni konstanta, potem $\textbf{r}(t)$ neenakomerno parametrizirana daljica ali premica.
             \item $w \not\equiv 0$ in $u = \pm v$ ali vsaj eden od $u, v$ ničelni polinom, 
-            potem $r(t)$ neenakomerno parametrizirana daljica.
-            \item $r(t)$ stopnje $n + 2m + 1$, kjer $n = deg(w)$ in $m = max(deg(u),deg(v))$
+            potem $\textbf{r}(t)$ neenakomerno parametrizirana daljica.
+            \item $\textbf{r}(t)$ stopnje $n + 2m + 1$, kjer $n = deg(w)$ in $m = max(deg(u),deg(v)).$
         \end{itemize} 
     \end{opomba}
       
@@ -185,15 +186,15 @@
 \begin{frame}
 \frametitle{Parametrična hitrost in dolžina loka}
 Parametrična hitrost:
-$$ | r\prime (t) | =\sqrt{x\prime^2(t)+y\prime^2(t)}= u^2 (t) + v^2 (t) = \sigma (t)$$
+$$ || \textbf{r}\prime (t) || =\sqrt{\textbf{x}\prime^2(t)+\textbf{y}\prime^2(t)}= \textbf{u}^2 (t) + \textbf{v}^2 (t) = \sigma (t)$$
 $$\sigma (t) =\sum_{k=0}^{n-1} \sigma_kB_k^{n-1}(t),$$
 	kjer  
 $$\sigma_k =\sum_{j=max(0,k-m)}^{min(m,k)}\frac{\binom{m}{j}\binom{m}{k-j}}{\binom{n-1}{k}}(u_ju_{k-j}+v_jv_{k-j}),$$ $$k = 0,\ldots , n - 1.$$
 \end{frame}
 \begin{frame}
     Dolžina loka:
-    $$s (t) =\int^t_0\sigma(\tau) d\tau,$$
-    $$s (t) =\sum^n_{k=0}s_k\binom{n}{k}(1-t)^{n-k}t^k=\sum_{k=0}^n s_kB^n_k(t),$$
+    $$\textbf{s}(t) =\int^t_0\sigma(\tau) d\tau,$$
+    $$\textbf{s}(t) =\sum^n_{k=0}s_k\binom{n}{k}(1-t)^{n-k}t^k=\sum_{k=0}^n s_kB^n_k(t),$$
 	kjer  $$s_0=0 \quad \text{in} \quad s_k=\frac{1}{n}\sum^{k-1}_{j=0}\sigma_j \quad k=1,\ldots,n.$$
 
     Skupna dolžina loka je $S(1)$. 
